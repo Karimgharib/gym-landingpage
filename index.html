@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Gym</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">GYM</div>
+        <nav>
+          <i class="fas fa-bars bar"></i>
+          <ul>
+            <i class="fas fa-times close"></i>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Classes</a></li>
+            <li><a href="">Staff</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="" class="color">JOIN NOW</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="landing">
+      <div class="container">
+        <h1>Take Action Now</h1>
+        <p>GET READY AND START OUR FREE TRAIL</p>
+        <a href="">JOIN NOW</a>
+      </div>
+      <ul class="slider">
+        <li class="active"></li>
+        <li class="p2"></li>
+      </ul>
+    </div>
+    <div class="about">
+      <div class="container">
+        <h2><span>Get Up!</span> Challenge yourself today</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed sem
+          ipsum. Proin efficitur dolor accumsan purus varius tempus nec a nulla.
+          Aliquam id vulputate massa, a rhoncus justo. Nunc luctus non ipsum a
+          cursus. Donec laoreet iaculis egestas. Nulla finibus sed ipsum a
+          pretium. Mauris ut nisl nec metus.
+        </p>
+        <a href="">ABOUT THE GYM</a>
+      </div>
+    </div>
+    <div class="classes">
+      <div class="box one">
+        <h2>Our Packages</h2>
+        <div class="price">
+          <div class="words">
+            <p>Weight Loose</p>
+            <p>Personal Training</p>
+            <p>Group Training</p>
+            <p class="end">Body Combat</p>
+          </div>
+          <div class="pric">
+            <p>: $250 / month</p>
+            <p>: $500 / month</p>
+            <p>: $300 / month</p>
+            <p>: $200 / month</p>
+          </div>
+        </div>
+        <a href="">PRICING</a>
+      </div>
+      <div class="box two">
+        <h2>Our Classes</h2>
+        <div class="words one">
+          <p>Running</p>
+          <p>Running</p>
+          <p>Running</p>
+          <p class="end">Running</p>
+        </div>
+        <div class="words two">
+          <p>Body Building</p>
+          <p>Body Building</p>
+          <p>Body Building</p>
+          <p class="end">Body Building</p>
+        </div>
+        <div class="words three">
+          <p>Kick Boxing</p>
+          <p>Kick Boxing</p>
+          <p>Kick Boxing</p>
+          <p class="end">Kick Boxing</p>
+        </div>
+        <div class="words four">
+          <p>Yoga</p>
+          <p>Yoga</p>
+          <p>Yoga</p>
+          <p class="end">Yoga</p>
+        </div>
+        <ul>
+          <li class="active" data-word=".one"></li>
+          <li data-word=".two"></li>
+          <li data-word=".three"></li>
+          <li data-word=".four"></li>
+        </ul>
+        <a href="">VIEW CLASSES</a>
+      </div>
+      <div class="box three">
+        <h2>Our Facility</h2>
+        <div class="words one">
+          <p>Best Trainers</p>
+          <p>Flexible Timing</p>
+          <p>Cardio Programs</p>
+          <p class="end">Physics</p>
+        </div>
+        <div class="words two">
+          <p>Flexible Timing</p>
+          <p>Cardio Programs</p>
+          <p>Best Trainers</p>
+          <p class="end">Physics</p>
+        </div>
+        <div class="words three">
+          <p>Cardio Programs</p>
+          <p>Best Trainers</p>
+          <p>Flexible Timing</p>
+          <p class="end">Physics</p>
+        </div>
+        <div class="words four">
+          <p>Best Trainers</p>
+          <p>Cardio Programs</p>
+          <p>Flexible Timing</p>
+          <p class="end">Physics</p>
+        </div>
+        <ul>
+          <li class="active" data-wor=".one"></li>
+          <li data-wor=".two"></li>
+          <li data-wor=".three"></li>
+          <li data-wor=".four"></li>
+        </ul>
+        <a href="">LEARN MORE</a>
+      </div>
+    </div>
+    <div class="trainer">
+      <div class="container">
+        <div class="cont">
+          <img src="images/trainer-colored.png" alt="" />
+          <h2>Trainers</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            blandit, felis nec gravida lobortis, est felis convallis lacus,
+            vitae commodo metus ipsum.
+          </p>
+          <a href="">MEET THE STAFF</a>
+        </div>
+        <div class="cont">
+          <img src="images/member-colored.png" alt="" />
+          <h2>Become a Member</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            blandit, felis nec gravida lobortis, est felis convallis lacus,
+            vitae commodo metus ipsum.
+          </p>
+          <a href="">JOIN NOW</a>
+        </div>
+        <div class="cont">
+          <img src="images/group-fitness-colored.png" alt="" />
+          <h2>Group Fitness</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            blandit, felis nec gravida lobortis, est felis convallis lacus,
+            vitae commodo metus ipsum.
+          </p>
+          <a href="">LEARN MORE</a>
+        </div>
+      </div>
+    </div>
+    <div class="quote">
+      <div class="container">
+        <div class="talk">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor
+            ex, pellentesque a congue id, dapibus ac ante. Nam vel ipsum
+            maximus, lacinia dui at, feugiat nibh. In pulvinar arcu diam, non
+            ultricies risus blandit non. Aenean vel sapien.
+          </p>
+          <h5>Judy Jackson</h5>
+          <h3>Boxer</h3>
+        </div>
+        <img src="images/testimonial-woman-1.jpg" alt="" />
+      </div>
+    </div>
+    <div class="resoureces">
+      <div class="box one">
+        <h2>Resources</h2>
+        <p>How to get start</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A totam dolor
+          quibusdam quaerat
+        </p>
+        <!-- <p>How to get start</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A totam dolor
+          quibusdam quaerat
+        </p>
+        <p>How to get start</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A totam dolor
+          quibusdam quaerat
+        </p> -->
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="box two">
+        <h2>Working Hours</h2>
+        <div class="dates">
+          <div class="day">
+            <p>Mon - Fri</p>
+            <p>Saturday</p>
+            <p>Sunday</p>
+          </div>
+          <div class="hour">
+            <p>: 5.30am - 11.00pm</p>
+            <p>: 5.30am - 1.00pm</p>
+            <p>: Closed</p>
+          </div>
+        </div>
+      </div>
+      <div class="box three">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/slide-2.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide-1.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+    <!-- start footer -->
+    <footer>
+      <div class="icons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google"></i>
+      </div>
+      <p>2021 © Karim The Gym Copyright All Rights Reserved.</p>
+    </footer>
+    <!-- end footer -->
+    <span class="up show"><i class="fas fa-chevron-up"></i></span>
+    <script src="js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
